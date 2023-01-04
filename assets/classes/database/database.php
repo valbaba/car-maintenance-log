@@ -6,11 +6,12 @@ class Database{
     function __construct()
     {
         $servername = "localhost:3307";
-        $username = "pma";
+        $username = "root";
         $password = "";
+        $database = "garage";
 
 // Create connection
-        $this->conn = new mysqli($servername, $username, $password);
+        $this->conn = new mysqli($servername, $username, $password, $database);
 
 // Check connection
         if ($this->conn->connect_error) {
@@ -19,4 +20,14 @@ class Database{
 //        echo "Connected successfully";
 
     }
+
+    /**
+     * @return mysqli
+     */
+    public function getConn()
+    {
+        return $this->conn;
+    }
+
+
 }
