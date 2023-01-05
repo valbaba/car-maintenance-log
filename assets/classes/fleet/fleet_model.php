@@ -17,7 +17,7 @@ class Model {
     /**
      * @return array
      */
-    public function getAllmodels()
+    public function getAllModels()
     {
         $sql = "SELECT * FROM model";
         $result = $this->conn->query($sql);
@@ -34,7 +34,7 @@ class Model {
      * @param $model_id
      * @return int|string|mixed
      */
-    public function getmodelNameById($model_id){
+    public function getModelNameById($model_id){
         $sql = "SELECT * FROM model WHERE id=$model_id";
         $result = $this->conn->query($sql);
         $models = [];
@@ -49,7 +49,7 @@ class Model {
      * @param $model_name
      * @return int|string|mixed
      */
-    public function getmodelIdByName($model_name){
+    public function getModelIdByName($model_name){
         $sql = "SELECT * FROM model WHERE name=$model_name";
         $result = $this->conn->query($sql);
         $models = [];
@@ -63,7 +63,7 @@ class Model {
      * @param $model_name
      * @return int
      */
-    public function addmodel($model_name){
+    public function addModel($model_name){
         $sql = "INSERT INTO model (name) VALUES ('$model_name')";
         if ($this->conn->query($sql) === TRUE) {
             return 0;
