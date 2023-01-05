@@ -1,9 +1,17 @@
 <?php
 include("classes/classes.php");
-$_SESSION["email"] = "valentinbriezbanuls@gmail.com";
+
+$phpConfig = new PHPConfig;
+
+
+// Sessions & php configs
+
+$phpConfig->setSessionsLife();
+
+$phpConfig->setCookiesLife();
+
+$phpConfig->createSession();
+
 if(!isset($_SESSION["email"])){
     header("Location: login.php");
-//    echo "test";
-} else {
-    session_start();
 }

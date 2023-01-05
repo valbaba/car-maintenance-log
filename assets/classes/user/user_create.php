@@ -12,6 +12,7 @@ class CreateUser
     public function createUser($email, $password)
     {
         $login = explode("@", $email)[0];
+        $password = hash("sha256", $password);
         $sql = "INSERT INTO user (email, login, password) VALUES ('$email', '$login','$password')";
         if ($this->conn->query($sql) === TRUE) {
             return 0;
