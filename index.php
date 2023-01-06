@@ -1,4 +1,5 @@
 <?php
+//TODO test
 include("assets/config.php");
 //$database = new Database;
 $car_stock = 0;
@@ -39,8 +40,8 @@ $car_stock = 0;
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <i class="zmdi zmdi-file-text"></i>
-                            Orders
+                            <i class="zmdi zmdi-car"></i>
+                            Mes véhicules
                         </a>
                     </li>
 <!--                    <li class="nav-item">-->
@@ -152,7 +153,7 @@ $car_stock = 0;
                         <tr>
                             <th>Project</th>
                             <th>Deadline</th>
-                            <th>Leader + Team</th>
+                            <th>Leader + Garage</th>
                             <th>Budget</th>
                             <th>Status</th>
                             <th class="text-right">Actions</th>
