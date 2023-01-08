@@ -73,5 +73,9 @@ class vehiculeUser
             return $this->conn->error;
         }
     }
-}
 
+    public function getAmountVehicule($fleet_id){
+
+    }
+}
+con

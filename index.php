@@ -6,14 +6,18 @@ $car_stock = 0;
 ?>
 
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Car Management</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,600"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/selectric.css'>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
+    <link rel='stylesheet'
+          href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+    <link rel="stylesheet" href="./style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </head>
 <body>
@@ -44,63 +48,63 @@ $car_stock = 0;
                             Mes véhicules
                         </a>
                     </li>
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-shopping-cart"></i>-->
-<!--                            Products-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-accounts"></i>-->
-<!--                            Customers-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-chart"></i>-->
-<!--                            Reports-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-layers"></i>-->
-<!--                            Integrations-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!---->
-<!--                <h6 class="sidebar-heading d-flex justify-content-between align-items-center pl-3 mt-4 mb-1 text-muted">-->
-<!--                    <span>Saved reports</span>-->
-<!--                    <a class="d-flex align-items-center text-muted" href="#">-->
-<!--                        <i class="zmdi zmdi-plus-circle-o"></i>-->
-<!--                    </a>-->
-<!--                </h6>-->
-<!--                <ul class="nav flex-column mb-2">-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-file-text"></i>-->
-<!--                            Current month-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-file-text"></i>-->
-<!--                            Last quarter-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-file-text"></i>-->
-<!--                            Social engagement-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    <li class="nav-item">-->
-<!--                        <a class="nav-link" href="#">-->
-<!--                            <i class="zmdi zmdi-file-text"></i>-->
-<!--                            Year-end sale-->
-<!--                        </a>-->
-<!--                    </li>-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-shopping-cart"></i>-->
+                    <!--                            Products-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-accounts"></i>-->
+                    <!--                            Customers-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-chart"></i>-->
+                    <!--                            Reports-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-layers"></i>-->
+                    <!--                            Integrations-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
+                    <!--                </ul>-->
+                    <!---->
+                    <!--                <h6 class="sidebar-heading d-flex justify-content-between align-items-center pl-3 mt-4 mb-1 text-muted">-->
+                    <!--                    <span>Saved reports</span>-->
+                    <!--                    <a class="d-flex align-items-center text-muted" href="#">-->
+                    <!--                        <i class="zmdi zmdi-plus-circle-o"></i>-->
+                    <!--                    </a>-->
+                    <!--                </h6>-->
+                    <!--                <ul class="nav flex-column mb-2">-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-file-text"></i>-->
+                    <!--                            Current month-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-file-text"></i>-->
+                    <!--                            Last quarter-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-file-text"></i>-->
+                    <!--                            Social engagement-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
+                    <!--                    <li class="nav-item">-->
+                    <!--                        <a class="nav-link" href="#">-->
+                    <!--                            <i class="zmdi zmdi-file-text"></i>-->
+                    <!--                            Year-end sale-->
+                    <!--                        </a>-->
+                    <!--                    </li>-->
                 </ul>
             </div>
         </nav>
@@ -112,7 +116,7 @@ $car_stock = 0;
                             <div class="title">Mes véhicules</div>
                             <i class="zmdi zmdi-upload"></i>
                             <div class="value"><?php echo $car_stock ?></div>
-<!--                            <div class="stat"><b>13</b>% increase</div>-->
+                            <!--                            <div class="stat"><b>13</b>% increase</div>-->
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
@@ -120,7 +124,7 @@ $car_stock = 0;
                             <div class="title">team members</div>
                             <i class="zmdi zmdi-upload"></i>
                             <div class="value">5,990</div>
-                            <div class="stat"><b>4</b>% increase</div>
+                            <!--                            <div class="stat"><b>4</b>% increase</div>-->
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
@@ -128,7 +132,7 @@ $car_stock = 0;
                             <div class="title">total budget</div>
                             <i class="zmdi zmdi-download"></i>
                             <div class="value">$80,990</div>
-                            <div class="stat"><b>13</b>% decrease</div>
+                            <!--                            <div class="stat"><b>13</b>% decrease</div>-->
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
@@ -136,7 +140,7 @@ $car_stock = 0;
                             <div class="title">new customers</div>
                             <i class="zmdi zmdi-download"></i>
                             <div class="value">3</div>
-                            <div class="stat"><b>13</b>% decrease</div>
+                            <!--                            <div class="stat"><b>13</b>% decrease</div>-->
                         </div>
                     </div>
                 </div>
@@ -144,9 +148,9 @@ $car_stock = 0;
             <div class="projects mb-4">
                 <div class="projects-inner">
                     <header class="projects-header">
-                        <div class="title">Ongoing Projects</div>
+                        <div class="title">Vehicules</div>
                         <div class="count">| 32 Projects</div>
-                        <i class="zmdi zmdi-download"></i>
+                        <i class="zmdi zmdi-plus" onclick="add_vehicule()"></i>
                     </header>
                     <table class="projects-table">
                         <thead>
@@ -169,7 +173,8 @@ $car_stock = 0;
                                 <p class="text-danger">Overdue</p>
                             </td>
                             <td class="member">
-                                <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure>
+                                <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png"/>
+                                </figure>
                                 <div class="member-info">
                                     <p>Myrtle Erickson</p>
                                     <p>UK Design Team</p>
@@ -193,142 +198,7 @@ $car_stock = 0;
                                 </form>
                             </td>
                         </tr>
-                        <tr class="danger-item">
-                            <td>
-                                <p>New Dashboard</p>
-                                <p>Google</p>
-                            </td>
-                            <td>
-                                <p>17th Oct, 15</p>
-                                <p class="text-danger">Overdue</p>
-                            </td>
-                            <td class="member">
-                                <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure>
-                                <div class="member-info">
-                                    <p>Myrtle Erickson</p>
-                                    <p>UK Design Team</p>
-                                </div>
-                            </td>
-                            <td>
-                                <p>$4,670</p>
-                                <p>Paid</p>
-                            </td>
-                            <td class="status">
-                                <span class="status-text status-red">Blocked</span>
-                            </td>
-                            <td>
-                                <form class="form" action="#" method="POST">
-                                    <select class="action-box">
-                                        <option>Actions</option>
-                                        <option>Start project</option>
-                                        <option>Send for QA</option>
-                                        <option>Send invoice</option>
-                                    </select>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>New Dashboard</p>
-                                <p>Google</p>
-                            </td>
-                            <td>
-                                <p>17th Oct, 15</p>
-                                <p class="text-danger">Overdue</p>
-                            </td>
-                            <td class="member">
-                                <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure>
-                                <div class="member-info">
-                                    <p>Myrtle Erickson</p>
-                                    <p>UK Design Team</p>
-                                </div>
-                            </td>
-                            <td>
-                                <p>$4,670</p>
-                                <p>Paid</p>
-                            </td>
-                            <td class="status">
-                                <span class="status-text status-orange">In progress</span>
-                            </td>
-                            <td>
-                                <form class="form" action="#" method="POST">
-                                    <select class="action-box">
-                                        <option>Actions</option>
-                                        <option>Start project</option>
-                                        <option>Send for QA</option>
-                                        <option>Send invoice</option>
-                                    </select>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>New Dashboard</p>
-                                <p>Google</p>
-                            </td>
-                            <td>
-                                <p>17th Oct, 15</p>
-                                <p class="text-danger">Overdue</p>
-                            </td>
-                            <td class="member">
-                                <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure>
-                                <div class="member-info">
-                                    <p>Myrtle Erickson</p>
-                                    <p>UK Design Team</p>
-                                </div>
-                            </td>
-                            <td>
-                                <p>$4,670</p>
-                                <p>Paid</p>
-                            </td>
-                            <td class="status">
-                                <span class="status-text status-blue">Early stages</span>
-                            </td>
-                            <td>
-                                <form class="form" action="#" method="POST">
-                                    <select class="action-box">
-                                        <option>Actions</option>
-                                        <option>Start project</option>
-                                        <option>Send for QA</option>
-                                        <option>Send invoice</option>
-                                    </select>
-                                </form>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <p>New Dashboard</p>
-                                <p>Google</p>
-                            </td>
-                            <td>
-                                <p>17th Oct, 15</p>
-                                <p class="text-danger">Overdue</p>
-                            </td>
-                            <td class="member">
-                                <figure><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/584938/people_8.png" /></figure>
-                                <div class="member-info">
-                                    <p>Myrtle Erickson</p>
-                                    <p>UK Design Team</p>
-                                </div>
-                            </td>
-                            <td>
-                                <p>$4,670</p>
-                                <p>Paid</p>
-                            </td>
-                            <td class="status">
-                                <span class="status-text status-orange">In progress</span>
-                            </td>
-                            <td>
-                                <form class="form" action="#" method="POST">
-                                    <select class="action-box">
-                                        <option>Actions</option>
-                                        <option>Start project</option>
-                                        <option>Send for QA</option>
-                                        <option>Send invoice</option>
-                                    </select>
-                                </form>
-                            </td>
-                        </tr>
+
                     </table>
                 </div>
             </div>
@@ -356,7 +226,8 @@ $car_stock = 0;
                     <div class="col-12 col-md-4">
                         <div class="chart bar-chart light">
                             <div class="actions">
-                                <button type="button" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button type="button" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
                                     <i class="zmdi zmdi-more-vert"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right">
@@ -373,7 +244,8 @@ $car_stock = 0;
                     <div class="col-12 col-md-4">
                         <div class="chart doughnut-chart dark">
                             <div class="actions">
-                                <button type="button" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <button type="button" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
                                     <i class="zmdi zmdi-more-vert"></i>
                                 </button>
                                 <div class="dropdown-menu dropdown-menu-right">
@@ -397,7 +269,28 @@ $car_stock = 0;
 <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js'></script>
 <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js'></script>
 <script src='https://cdn.jsdelivr.net/jquery.selectric/1.10.1/jquery.selectric.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script><script  src="./script.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js'></script>
+<script src="./script.js"></script>
+<script>
+    async function add_vehicule() {
+        const {value: formValues} = await Swal.fire({
+            title: 'Informations du véhicule',
+            html:
+                '<input id="swal-input1" class="swal2-input">' +
+                '<input id="swal-input2" class="swal2-input">',
+            focusConfirm: false,
+            preConfirm: () => {
+                return [
+                    document.getElementById('swal-input1').value,
+                    document.getElementById('swal-input2').value
+                ]
+            }
+        })
 
+        if (formValues) {
+            Swal.fire(JSON.stringify(formValues))
+        }
+    }
+</script>
 </body>
 </html>

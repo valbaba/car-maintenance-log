@@ -41,6 +41,5 @@ class fleetUser
             return 1;
         }
     }
-
 }
 
